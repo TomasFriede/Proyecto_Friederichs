@@ -3,27 +3,24 @@
     margin: 0;
 }
 
-nav ul{
+.fondoNav{
+    background-color: rgb(165, 159, 159);
+    padding: 0px;
+    margin: 0px;
+}
+.nav{
     display: flex;
-    justify-content:space-around;
-    padding: 2rem;
+    justify-content: end; 
 }
 
-ul li{
-    list-style-type: none;
-}
-.activo :hover{
-    background-color:rgb(0, 0, 0);
-    transition: ease-in .4s;
-}
 
-a{
-    text-decoration: none;
-    color:#fff;
-    padding:20px;
-}
 .principal{
 background-color: #131c32;
+
+}
+.principio_main{
+    margin-top: 30vh;
+    margin-bottom: 40vh;
 }
 
 .name{
@@ -51,22 +48,30 @@ background-color: #131c32;
 .name span{
     color:rgb(251, 196, 114) ;
 }
+.name h1:hover{
+    background-color: rgb(165, 159, 159);
+    transition: background-color 3s;
+    padding-top: 15px;
+}
 
 header{
     
-    background-color:dimgray;
+    background-color:rgb(165, 159, 159);
 }
 
 
  .contenedorimg .fotocv{
    width: 20%;
    height: 30%;
-   border: 4px solid black;
    margin-left: 65vw;
-   margin-top: -22%;
-   margin-bottom: 15%;
-
+   margin-top: -40%;
+   clip-path: circle(45% at center);
+   transition: width;
 }
+.fotocv:hover{
+width: 30%; 
+}
+
 .imgcuadro{
     grid-area: contImg;
 }
@@ -81,10 +86,11 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    background-color:dimgray;
-    color: aliceblue;
+    background-color:rgb(165, 159, 159);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
-@media(max-width:500px){
+@media(max-width:576px){
     .name{
         display: grid;
         grid-template-areas: 
@@ -124,7 +130,8 @@ footer{
     /* SECCION INFORMACION */
 
     .informacionpersonal{
-    background-color: #FAB818;
+    background-color: #131c32;
+    
     }
 
     .informacionpersonal main{      
@@ -133,10 +140,20 @@ footer{
     }
 
     .informacionpersonal h3{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        transition: color 1s ;
+    }
+    .informacionpersonal h3:hover{
+        color: rgb(255, 238, 3);
+        
     }
     .informacionpersonal p{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        display: flex;
+        text-align: center;
     }
     .imgvalores{
         grid-area: imagenValores;
@@ -165,9 +182,13 @@ footer{
         display: flex;
         justify-content: center;
         padding: 0px;
-        margin-bottom: 5vh;
+        margin-bottom: 15vh;
         background-color: black;
-        color: #FAB818;
+        color: #ffffff;
+        transition: color 1s;
+    }
+    .otraInfo:hover{
+        color: rgb(255, 238, 3) ;
     }
     .atributos img{
         height: 50vh;
@@ -176,25 +197,19 @@ footer{
     .presentacion img{
         height: 50%;
         width: 85%;
-        margin-left: 10%;
-        margin-bottom: 5vh;
-        margin-top: 2vh;
-        border: 3px solid black;
+        margin-left: 8%;
+        margin-bottom: 15vh;
+        margin-top: 15vh;
+        
       }        
 
     .footerInfo{
         padding-bottom: 20px;
         margin-top: 40px;
-    }
-
-    .footerInfo h3{
-        display: flex;
-        color: #FAB818;
-        justify-content: space-around;
-        padding-top: 20px;
         
     }
-    @media(max-width:500px){
+
+    @media(max-width:576px){
         .atributos{
             display: grid;
             grid-template-areas:  
@@ -235,8 +250,8 @@ footer{
     .presentacion img{
         height: 60%;
         width: 90%;
-        padding-left: 5%;
         padding-bottom: 10vh;
+        
     } 
 }
 
@@ -245,7 +260,7 @@ footer{
     .padre{
         display: flex;
         flex-direction: column;
-        background-color: #779683;
+        background-color:  #131c32;
         padding-bottom: 5%;
     }
     .padre img{
@@ -260,76 +275,137 @@ footer{
         padding: 0px;
         margin-left:33% ;
         margin-right: 34%;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         padding-left: 9%;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
 
     }
+    .hijo1{
+        margin-top: 20vh;
+    }
+    
     .hijo1 h2{
-        margin-left:34%
+        margin-left:35%
 
     }
     .hijo2 h2{
-        margin-left:34%
+        margin-left:33%
 
     }
-    
+    .hijo3 h2{
+        margin-left:30%;
+    }
+    .hijo4 h2{
+        margin-left:30%;
+    }
     .padre p{
         text-align: center;
         padding: 3% 10% 2% 7%;
-        background-color: rgb(151, 148, 148);
+        background-color: rgb(165, 159, 159);
         margin: 0% 0% 0% 0%;
-        
-    }
-    .padre h3{
-        padding-left: 47%;
-    }
+         }
+         .hijo4 p{
+            margin-bottom: 20vh;
+         }
+         .hijo3 p{
+            margin-bottom: 15vh;
+         }
+         .hijo2 p{
+            margin-bottom: 15vh;
+         }
+         .hijo1 p{
+            margin-bottom: 15vh;
+         }
+    
     .futer2{
         margin-top: 0px;
         
-    }
+    } 
     
 
    /* Seccion estudios*/
 
    .estudios{
-    background-color:rgb(237, 124, 104);
+    background-color: #131c32;
    }
    
   .studios img{
     width: 400px;
     justify-content: center;
   }
-  .studios h2{
-    color: antiquewhite;
- }
+  
  .studios img{
     width: 30%;
     height: 30%;
     margin-left: 35%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 3%;
  }
  .studios h2{
     display: flex;
     justify-content: center;
+    color: #ffffff;
+ }
+ .desarrolloWeb{
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+ }
+ .trainner{
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+ }
+ .secundario{
+    margin-bottom: 40vh;
+    margin-top: 5vh;
+ }
+ .desarrolloWeb:hover{
+    transition: background-color 3s;
+    background-color:rgb(165, 159, 159) ;
+ }
+ .desarrolloWeb h2:hover{
+    transition: color 1s;
+    color: black;
+ }
+
+ .secundario h2:hover{
+    transition: color 1s;
+    color: black;
+ }
+
+ .trainner h2:hover{
+    transition: color 1s;
+    color: black;
+ }
+
+ .trainner:hover{
+    transition: background-color 3s;
+    background-color: rgb(165, 159, 159);
+ }
+ .secundario:hover{
+    transition: background-color 3s;
+    background-color: rgb(165, 159, 159);
  }
  .studios h3{
     display: flex;
     justify-content: center;
+    color: #ffffff;
  }
  .studios p{
     display: flex;
     justify-content: center;
+    color: rgb(255, 0, 0);
  }
  .studios b{
     display: flex;
     justify-content: center;
+    color: black;
  }
-  
+
    /*Seccion contacto*/
 
 .contacto{
-    background-image: url(../imagenes/formularios.jpg);
+    background-color: #131c32;
 }
 .formulario{
     width: 40%;
@@ -339,8 +415,12 @@ footer{
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    background-color:dimgray;
-    border-style: double;
+    background-color:rgb(165, 159, 159);
+    border: black double 10px;
+}
+.formulario:hover{
+    transition: width 5s;
+    width: 70%;
     
 }
 .boton{
@@ -350,6 +430,7 @@ footer{
     height: 30px;
     margin: auto;
 }
+
 .formulario h2{
     color: rgb(255, 255, 255);
     display: flex;
@@ -362,10 +443,22 @@ footer{
     justify-content: center;
     width: 100%;
     margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+.text_iframeh3{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 20vh;
 
+}
+.text_iframeh4{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20vh;
 
-
-    
-    
-   
+}
