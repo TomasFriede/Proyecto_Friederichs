@@ -4,15 +4,40 @@
 }
 
 .fondoNav{
-    background-color: rgb(165, 159, 159);
+    background-color: rgb(155, 136, 136);
     padding: 0px;
     margin: 0px;
 }
 .nav{
     display: flex;
-    justify-content: end; 
+    justify-content: end;
 }
 
+@media(max-width:576px){
+    .nav{
+        display: flex;
+        justify-content: left;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+}
+@media(max-width:768px){
+    .nav{
+        display: flex;
+        justify-content:left;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+}
+@media(max-width:992px){
+    .nav{
+        display: flex;
+        justify-content:left;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        
+    }
+}
 
 .principal{
 background-color: #131c32;
@@ -38,6 +63,9 @@ background-color: #131c32;
     
 
 }
+h1,p,h2,h3,h4{
+    font-family: 'Times New Roman', Times, serif;
+}
 .name p{
     display: flex;
     flex-direction: row;
@@ -46,17 +74,18 @@ background-color: #131c32;
 
 }
 .name span{
-    color:rgb(251, 196, 114) ;
+    color:rgb(240, 163, 49) ;
 }
 .name h1:hover{
-    background-color: rgb(165, 159, 159);
+    background-color: rgb(155, 136, 136);
     transition: background-color 3s;
     padding-top: 15px;
 }
 
+
 header{
     
-    background-color:rgb(165, 159, 159);
+    background-color: rgb(155, 136, 136);
 }
 
 
@@ -66,7 +95,7 @@ header{
    margin-left: 65vw;
    margin-top: -40%;
    clip-path: circle(45% at center);
-   transition: width;
+   transition: width 4s;
 }
 .fotocv:hover{
 width: 30%; 
@@ -86,7 +115,7 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    background-color:rgb(165, 159, 159);
+    background-color: rgb(155, 136, 136);
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
