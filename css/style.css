@@ -315,11 +315,10 @@ footer{
     }
     
     .hijo1 h2{
-        margin-left:35%
-
+        margin-left:35%;
     }
     .hijo2 h2{
-        margin-left:33%
+        margin-left:33%;
 
     }
     .hijo3 h2{
@@ -479,15 +478,20 @@ footer{
 .text_iframeh3{
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    color: #000000;
     margin-top: 20vh;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color:rgb(165, 159, 159); 
 
 }
 .text_iframeh4{
     display: flex;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     margin-top: 20vh;
-
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color:rgb(165, 159, 159);
 }
