@@ -1,17 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+@import "general";
+@import "navbarra"; 
+@import "footer";
 
-.fondoNav{
-    background-color: rgb(155, 136, 136);
-    padding: 0px;
-    margin: 0px;
-}
-.nav{
-    display: flex;
-    justify-content: end;
-}
 
 @media(max-width:576px){
     .nav{
@@ -111,14 +101,7 @@ width: 30%;
     grid-area: foto;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    background-color: rgb(155, 136, 136);
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-  }
+
 @media(max-width:576px){
     .name{
         display: grid;
