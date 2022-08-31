@@ -2,49 +2,58 @@
 @import "navbarra"; 
 @import "footer";
 
+$color:#131c32;
+$medidavh:5vh;
 
 @media(max-width:576px){
     .nav{
         display: flex;
         justify-content: left;
-        padding-bottom: 5vh;
-        padding-top: 5vh;
+        padding-bottom: $medidavh;
+        padding-top: $medidavh;
     }
 }
 @media(max-width:768px){
     .nav{
         display: flex;
         justify-content:left;
-        padding-bottom: 5vh;
-        padding-top: 5vh;
+        padding-bottom: $medidavh;
+        padding-top: $medidavh;
     }
 }
 @media(max-width:992px){
     .nav{
         display: flex;
         justify-content:left;
-        padding-bottom: 5vh;
-        padding-top: 5vh;
+        padding-bottom: $medidavh;
+        padding-top: $medidavh;
         
     }
 }
 
 .principal{
-background-color: #131c32;
+background-color: $color;
 
 }
 .principio_main{
-    margin-top: 30vh;
+    margin-top: $medidavh*6;
     margin-bottom: 40vh;
 }
 
 .name{
-    color: #fff;
+    color: yellow;
     margin-left: 10%;
     margin-right: 40%;
     margin-top: 10%;
 
 }
+.extend_name{
+    color: #fff;
+}
+.name{
+    @extend .extend_name;
+}
+
 .name h1{
     display: flex;
     justify-content: center;
@@ -63,13 +72,13 @@ h1,p,h2,h3,h4{
     font-size: x-large;
 
 }
-.name span{
+span{
     color:rgb(240, 163, 49) ;
 }
 .name h1:hover{
     background-color: rgb(155, 136, 136);
     transition: background-color 3s;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 
@@ -142,7 +151,7 @@ width: 30%;
     /* SECCION INFORMACION */
 
     .informacionpersonal{
-    background-color: #131c32;
+    background-color: $color;
     
     }
 
@@ -272,65 +281,112 @@ width: 30%;
     .padre{
         display: flex;
         flex-direction: column;
-        background-color:  #131c32;
-        padding-bottom: 5%;
+        background-color: $color;
+        margin-top: -15%;
     }
     .padre img{
-        width: 40%;
-        height: 40%;
-        margin-left: 30vw;
-        margin-top: 10vh;
-        justify-items: center;
+        width: 25%;
+        margin-left: 10%;
+        margin-top: 27%;
+        margin-bottom: 10%;
         border: 3px solid black;
     }
     .padre h2{
         padding: 0px;
-        margin-left:33% ;
+        margin-left:33%;
         margin-right: 34%;
         color: rgb(255, 255, 255);
         padding-left: 9%;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
 
     }
     .hijo1{
-        margin-top: 20vh;
-    }
-    
-    .hijo1 h2{
-        margin-left:35%;
-    }
-    .hijo2 h2{
-        margin-left:33%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -43%;
+        margin-left: 47%;
+        width: 30%;
 
     }
-    .hijo3 h2{
-        margin-left:30%;
+    
+    .hijo2{
+        margin-bottom: 35%;
+        margin-top: -45%;
+        margin-left: 46%;
+        width: 30%;
+    }
+    .hijo3{
+        margin-bottom: 35%;
+        margin-top: -40%;
+        margin-left: 46%;
+        width: 30%;
+    }
+    .hijo4{
+        margin-bottom: 35%;
+        margin-top: -45%;
+        margin-left: 46%;
+        width: 30%;
     }
     .hijo4 h2{
-        margin-left:30%;
+        margin-left: 8%;
+        margin-right: 5%;
+        margin-bottom: 7%;
+        margin-top: 0%;
     }
+    .hijo3 h2{
+        margin-left: 8%;
+        margin-right: 5%;
+        margin-bottom: 7%;
+        margin-top: 0%;
+        
+    }
+    .hijo2 h2{
+        margin-left: 15%;
+        margin-right: 11%;
+        margin-bottom: 7%;
+        margin-top: 0%;
+        
+    }
+    .hijo1 h2{
+        margin-left: 25%;
+        margin-right: 17%;
+        margin-bottom: 7%;
+        margin-top: 0%;
+        
+    }
+    
     .padre p{
         text-align: center;
-        padding: 3% 10% 2% 7%;
-        background-color: rgb(165, 159, 159);
-        margin: 0% 0% 0% 0%;
-         }
-         .hijo4 p{
-            margin-bottom: 20vh;
-         }
-         .hijo3 p{
-            margin-bottom: 15vh;
-         }
-         .hijo2 p{
-            margin-bottom: 15vh;
-         }
-         .hijo1 p{
-            margin-bottom: 15vh;
-         }
+        width: 100%;
+        font-size: x-large;
+        color: #ffffff;
+        }
+    .padre h2{
+        font-size: xx-large;
+    }
+    .envoltura_hijo1{
+        margin-bottom: 10%;
+    }
+    .envoltura_hijo2{
+        margin-bottom: 10%;
+        margin-top: -20%;
+    }
+    .envoltura_hijo3{
+        margin-bottom: 15%;
+        margin-top: -40%;
+    }
+    .envoltura_hijo4{
+        margin-top: -60%;
+        margin-bottom:-3%;
+    }
+    .b_trabajo{
+        background-color: #000000;
+        color: white;
+    }
     
     .futer2{
-        margin-top: 0px;
+        margin-top: 0%;
         
     } 
     
@@ -338,7 +394,7 @@ width: 30%;
    /* Seccion estudios*/
 
    .estudios{
-    background-color: #131c32;
+    background-color: $color;
    }
    
   .studios img{
@@ -378,6 +434,13 @@ width: 30%;
     transition: color 1s;
     color: black;
  }
+ .ingles:hover{
+    transition: background-color 3s;
+    background-color:rgb(165, 159, 159) ;
+ }
+ .ingles h2:hover{
+    transition: color 1s;
+    color: black;}
 
  .secundario h2:hover{
     transition: color 1s;
@@ -416,7 +479,7 @@ width: 30%;
    /*Seccion contacto*/
 
 .contacto{
-    background-color: #131c32;
+    background-color: $color;
 }
 .formulario{
     width: 40%;
@@ -458,23 +521,11 @@ width: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.text_iframeh3{
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    margin-top: 20vh;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color:rgb(165, 159, 159); 
-
+@mixin medida ($width, $height){
+    width: $width;
+    height: $height;
 }
-.text_iframeh4{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-    margin-top: 20vh;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color:rgb(165, 159, 159);
+.iframe{
+    @include medida(50%,50% );
+    margin-left: 25%;
 }
