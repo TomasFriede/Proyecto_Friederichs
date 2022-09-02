@@ -75,12 +75,6 @@ h1,p,h2,h3,h4{
 span{
     color:rgb(240, 163, 49) ;
 }
-.name h1:hover{
-    background-color: rgb(155, 136, 136);
-    transition: background-color 3s;
-    padding-top: 5px;
-}
-
 
 header{
     
@@ -126,10 +120,12 @@ width: 30%;
     .name p{
         display: grid;
         padding-left: 50px;
+        padding-top: 20px;
     }
 
     .name h1{
-        padding-left:50px
+        padding-left:50px;
+        padding-top: 20px;
     }
 
     .contenedorimg .fotocv{
@@ -147,12 +143,15 @@ width: 30%;
         margin-top: 7%;
         margin-bottom: 15%;
     } } 
-
+   
     /* SECCION INFORMACION */
 
     .informacionpersonal{
     background-color: $color;
     
+    }
+    .card_class{
+        display: flex;
     }
 
     .informacionpersonal main{      
@@ -271,11 +270,9 @@ width: 30%;
     .presentacion img{
         height: 60%;
         width: 90%;
-        padding-bottom: 10vh;
-        
+        padding-bottom: 10vh;   
     } 
-}
-
+    }
     /* Seccion Trabajo*/
 
     .padre{
@@ -307,9 +304,7 @@ width: 30%;
         margin-top: -43%;
         margin-left: 47%;
         width: 30%;
-
     }
-    
     .hijo2{
         margin-bottom: 35%;
         margin-top: -45%;
@@ -352,8 +347,7 @@ width: 30%;
         margin-left: 25%;
         margin-right: 17%;
         margin-bottom: 7%;
-        margin-top: 0%;
-        
+        margin-top: 0%;  
     }
     
     .padre p{
@@ -385,13 +379,10 @@ width: 30%;
         background-color: #000000;
         color: white;
     }
-    
     .futer2{
         margin-top: 0%;
         
     } 
-    
-
    /* Seccion estudios*/
 
    .estudios{

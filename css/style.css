@@ -89,12 +89,6 @@ span {
   color: rgb(240, 163, 49);
 }
 
-.name h1:hover {
-  background-color: rgb(155, 136, 136);
-  transition: background-color 3s;
-  padding-top: 5px;
-}
-
 header {
   background-color: rgb(155, 136, 136);
 }
@@ -136,9 +130,11 @@ header {
   .name p {
     display: grid;
     padding-left: 50px;
+    padding-top: 20px;
   }
   .name h1 {
     padding-left: 50px;
+    padding-top: 20px;
   }
   .contenedorimg .fotocv {
     display: grid;
@@ -156,6 +152,10 @@ header {
 /* SECCION INFORMACION */
 .informacionpersonal {
   background-color: #131c32;
+}
+
+.card_class {
+  display: flex;
 }
 
 .informacionpersonal main {
