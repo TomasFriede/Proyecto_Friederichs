@@ -470,9 +470,9 @@ header {
     margin-left: -52%;
   }
   .padre p {
-    font-size: medium;
-    margin-left: -122%;
-    width: 400px;
+    font-size: x-large;
+    margin-left: -110%;
+    width: 230%;
   }
   .hijo2 h2 {
     margin-top: 120%;
@@ -497,9 +497,9 @@ header {
     margin-left: -50%;
   }
   .padre p {
-    font-size: medium;
-    margin-left: -100%;
-    width: 400px;
+    font-size: x-large;
+    margin-left: -110%;
+    width: 230%;
   }
   .hijo2 h2 {
     margin-top: 120%;
@@ -524,9 +524,9 @@ header {
     margin-left: -30%;
   }
   .padre p {
-    font-size: medium;
-    margin-left: -62%;
-    width: 400px;
+    font-size: x-large;
+    margin-left: -110%;
+    width: 230%;
   }
   .hijo2 h2 {
     margin-top: 120%;
@@ -549,6 +549,7 @@ header {
 .studios img {
   width: 400px;
   justify-content: center;
+  border: 3px solid black;
 }
 
 .studios img {
@@ -684,7 +685,7 @@ header {
     color: black;
     background-color: #ffffff;
     width: 100px;
-    margin-left: 44%;
+    margin-left: 42%;
   }
 }
 @media (max-width: 992px) {
